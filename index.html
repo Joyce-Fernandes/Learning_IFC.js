@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap" rel="stylesheet">
+    
+    <title>Client_IFC</title>
+</head>
+
+<body class="light">
+    <div class="frame">
+        <header>
+            <div class="header-notFixed">
+                <img src="./img/FGV.svg.png" width="230" height="80" alt="logo">
+            </div>
+            <div id="toggle">
+                <i class="indicator"></i>
+            </div>
+        </header>
+
+        <input type="file" id="file-input">
+        <div class="app-container">
+            <div class="sidebar">
+                <div class="tree">
+                    <ul>
+                        <li><a href="#">IFC Tree</a></li>
+                    </ul>
+                </div>
+
+                <div class="tree-menu">
+                    <ul id="myUL">
+                        <li><span class="caret">IFC</span>
+                            <ul class="nested">
+                                <li>Level 0</li>
+                                <li>Level 1</li>
+                                <li><span class="caret">Level</span>
+                                    <ul class="nested">
+                                        <li>Level 2</li>
+                                        <li>Level 3</li>
+                                        <li><span class="caret">Level</span>
+                                            <ul class="nested">
+                                                <li>01</li>
+                                                <li>02</li>
+                                                <li>03</li>
+                                                <li>04</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="set">
+                    <ul>
+                        <li><a href="#">Property Set</a></li>
+                    </ul>
+                </div>
+
+                <div id="property-menu" class="property-menu">
+                    <div class="property-root">
+                        <div class="property-name">Key</div>
+                        <div class="property-value">Value</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="button-export">
+                        <button id="export" onclick="exportDiv()">Export<img src="./img/export-excel.png" width="37"
+                                height="25" alt="Export"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <div id="loader-button">Open IFC<img src="./img/open.png" width="35" height="22" alt="Open"
+                        class="button">
+                </div>
+            </div>
+
+            <div id="viewer-container">
+
+            
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="tblExport">
+    </div>
+
+    <script src="bundle.js"></script>
+    <script>
+
+        const body = document.querySelector('body')
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function () {
+            toggle.classList.toggle('active')
+            body.classList.toggle('dark-mode')}
+
+    </script>
+</body>
+</html>
