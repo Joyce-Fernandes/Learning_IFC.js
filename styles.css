@@ -215,7 +215,6 @@ header img {
     border: solid 3px #333333;
     overflow-y: auto;
     font-size: 20px;
-    text-align: center;
     margin-bottom: 1.5em;
     width: 100%;
 
@@ -349,3 +348,4 @@ body {
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
 }
+
