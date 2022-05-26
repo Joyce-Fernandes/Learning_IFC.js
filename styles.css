@@ -71,7 +71,7 @@ body {
     filter: invert(1) grayscale(1) brightness(500%);
 
 }
-.dark-mode .button-export,
+.dark-mode #datos,
 .dark-mode .property-menu,
 .dark-mode .tree-menu,
 .dark-mode .button-container {
@@ -169,30 +169,34 @@ header img {
     margin-bottom: 2em;
 
 }
-#export {
+#datos a {
     border-width: 0;
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 25px;
+    color: var(--black);
     padding: 15px 0;
     background: none;
     text-align: center;
+    text-decoration: none;
+    cursor:auto;
     
 
 }
-#export img {
+#datos img {
     height: 37px;
     cursor: pointer;
     margin-left: 8px;
     border-radius: 5px;
     align-items: center;
+    margin-top: 10px;
 
 }
 .button-container {
     height: 2.5rem;
     margin-top: 2rem;
     position: absolute;
+    right: -3.8em;
     width: 15em;
-    right: -100px;
     font-size: 25px;
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -204,7 +208,7 @@ header img {
     margin-left: 8px;
 }
 
-#export img:hover,
+#datos img:hover,
 .button:hover {
     filter: opacity(0.5);
 

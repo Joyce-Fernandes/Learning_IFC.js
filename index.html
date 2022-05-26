@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap"
+        rel="stylesheet">
+
     <title>Client_IFC</title>
 </head>
 
 <body class="light">
+
     <div class="frame">
+
         <header>
             <div class="header-notFixed">
                 <img src="./img/FGV.svg.png" width="230" height="80" alt="logo">
@@ -71,9 +75,12 @@
                 </div>
 
                 <div>
-                    <div class="button-export">
-                        <button id="export" onclick="exportDiv()">Export<img src="./img/export-excel.png" width="37"
-                                height="25" alt="Export"></button>
+                    <div id="datos">
+                        <a href="public/index.html" rel="nofollow">Datos IFC<img src="./img/datos.png" width="37"
+                                height="25"></a>
+
+                        <!-- <button id="export_gltf" onclick="exportIfcFileAsGltf()">Export GLTF<img src="./img/export-gltf.png" width="37" 
+                                height="25" alt="Export"></button> -->
                     </div>
                 </div>
             </div>
@@ -86,14 +93,14 @@
 
             <div id="viewer-container">
 
-            
+
             </div>
         </div>
     </div>
     </div>
 
-    <div id="tblExport">
-    </div>
+    <!-- <div id="tblExport">
+    </div> -->
 
     <script src="bundle.js"></script>
     <script>
@@ -102,9 +109,10 @@
         const toggle = document.getElementById('toggle');
         toggle.onclick = function () {
             toggle.classList.toggle('active')
-            body.classList.toggle('dark-mode')}
+            body.classList.toggle('dark-mode')
+        }
 
     </script>
-   
 </body>
+
 </html>

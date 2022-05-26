@@ -121250,6 +121250,7 @@ GUI.input.onchange = async (changed) => {
     loadIFCFromURL(ifcURL);
 };
 
+
 // Highlight items when hovering over them
 
 container.onmousemove = () => viewer.IFC.prePickIfcItem();
@@ -121420,3 +121421,40 @@ function createSimpleChild(parent, node) {
 function nodeToString(node) {
     return `${node.type} - ${node.expressID}`;
 }
+
+// Export to glTF and JSON
+// const result = await viewer.GLTF.exportIfcFileAsGltf({
+//     ifcFileUrl: url,
+//     splitByFloors: true,
+//     categories: {
+//         walls: [IFCWALL, IFCWALLSTANDARDCASE],
+//         slabs: [IFCSLAB],
+//         windows: [IFCWINDOW],
+//         curtainwalls: [IFCMEMBER, IFCPLATE, IFCCURTAINWALL],
+//         doors: [IFCDOOR]
+//     },
+//     getProperties: true
+// });
+// // Download result
+// const link = document.createElement('a');
+// document.body.appendChild(link);
+
+// for(const categoryName in result.gltf) {
+//     const category = result.gltf[categoryName];
+//     for(const levelName in category) {
+//         const file = category[levelName].file;
+//         if(file) {
+//             link.download = `${file.name}_${categoryName}_${levelName}.gltf`;
+//             link.href = URL.createObjectURL(file);
+//             link.click();
+//         }
+//     }
+// }
+
+// for(let jsonFile of result.json) {
+//     link.download = `${jsonFile.name}.json`;
+//     link.href = URL.createObjectURL(jsonFile);
+//     link.click();
+// }
+
+// link.remove();
