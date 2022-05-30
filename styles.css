@@ -5,6 +5,7 @@
     overflow: hidden;
 
 }
+
 :root {
     --black: #333333;
     --white: #f5f5f5;
@@ -13,12 +14,14 @@
     --transition: 0.5s ease;
 
 }
+
 body {
     display: flex;
     justify-content: center;
     width: 100vw;
-  
+
 }
+
 .light {
     --background: var(--white);
     --transition: 0.5s ease;
@@ -30,11 +33,13 @@ body {
     border-bottom: 3px solid var(--black);
 
 }
+
 .light,
 .light .frame {
     --background: var(--white);
 
 }
+
 .light .tree li a,
 .light .set li a {
     color: var(--black);
@@ -42,6 +47,7 @@ body {
     --background: var(--white);
 
 }
+
 .light .property-menu,
 .light .tree-menu,
 .light .button-container {
@@ -55,11 +61,13 @@ body {
     border-bottom: 3px solid var(--white);
 
 }
+
 .dark-mode,
 .dark .frame {
     background-color: var(--black);
 
 }
+
 .dark-mode .tree li a,
 .dark-mode .set li a {
     color: var(--white);
@@ -67,10 +75,12 @@ body {
     background-color: var(--black);
 
 }
+
 .dark-mode header img {
     filter: invert(1) grayscale(1) brightness(500%);
 
 }
+
 .dark-mode #datos,
 .dark-mode .property-menu,
 .dark-mode .tree-menu,
@@ -78,11 +88,13 @@ body {
     filter: invert(1);
 
 }
+
 .frame {
     margin: 0 5%;
     width: 90%;
 
 }
+
 #toggle {
     margin-top: 2em;
     position: relative;
@@ -93,10 +105,11 @@ body {
     transition: 0.5s;
     cursor: pointer;
     box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
-                inset 0 8px 8px rgba(0, 0, 0, 0.1),
-                inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+        inset 0 8px 8px rgba(0, 0, 0, 0.1),
+        inset 0 -4px 4px rgba(0, 0, 0, 0.1);
 
 }
+
 #toggle .indicator {
     position: absolute;
     top: 0;
@@ -107,31 +120,34 @@ body {
     border-radius: 50%;
     transform: scale(0.9);
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-          inset 0 4px 4px rgba(255, 255, 255, 0.2),
-          inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+        inset 0 4px 4px rgba(255, 255, 255, 0.2),
+        inset 0 -4px 4px rgba(255, 255, 255, 0.2);
     transition: 0.5s;
 
 }
+
 #toggle.active .indicator {
     left: 30px;
     background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
-          inset 0 4px 4px rgba(255, 255, 255, 1),
-          inset 0 -4px 4px rgba(255, 255, 255, 1);
+        inset 0 4px 4px rgba(255, 255, 255, 1),
+        inset 0 -4px 4px rgba(255, 255, 255, 1);
 
 }
+
 #toggle.active {
     background: var(--black);
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-          inset 0 4px 4px rgba(255, 255, 255, 0.2),
-          inset 0 4px 20px rgba(255, 255, 255, 0.2);
+        inset 0 4px 4px rgba(255, 255, 255, 0.2),
+        inset 0 4px 20px rgba(255, 255, 255, 0.2);
 
 }
+
 #toggle.dark-mode {
     background: var(--black);
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-          inset 0 4px 4px rgba(255, 255, 255, 0.2),
-          inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+        inset 0 4px 4px rgba(255, 255, 255, 0.2),
+        inset 0 -4px 4px rgba(255, 255, 255, 0.2);
 
 }
 
@@ -148,12 +164,14 @@ header {
     border-bottom: 3px solid var(--black);
 
 }
+
 header img {
     width: 10em;
     height: auto;
     display: inline-block;
 
 }
+
 .app-container {
     width: 100vw;
     display: flex;
@@ -161,6 +179,7 @@ header img {
     justify-content: space-between;
 
 }
+
 .sidebar {
     min-width: 30rem;
     width: 30vw;
@@ -169,6 +188,7 @@ header img {
     margin-bottom: 2em;
 
 }
+
 #datos a {
     border-width: 0;
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -178,10 +198,11 @@ header img {
     background: none;
     text-align: center;
     text-decoration: none;
-    cursor:auto;
-    
+    cursor: auto;
+
 
 }
+
 #datos img {
     height: 37px;
     cursor: pointer;
@@ -191,6 +212,7 @@ header img {
     margin-top: 10px;
 
 }
+
 .button-container {
     height: 2.5rem;
     margin-top: 2rem;
@@ -201,6 +223,7 @@ header img {
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
+
 .button {
     height: 30px;
     border-radius: 5px;
@@ -213,6 +236,7 @@ header img {
     filter: opacity(0.5);
 
 }
+
 .tree-menu {
     --background: var(--white);
     height: 25.7%;
@@ -223,6 +247,7 @@ header img {
     width: 100%;
 
 }
+
 .tree li a,
 .set li a {
     text-decoration: none;
@@ -232,12 +257,14 @@ header img {
     font-size: 26px;
     list-style: none;
     margin: 0 0 0.0.5em 0;
+    min-width: 30rem;
     width: 30vw;
     padding: 8px 0;
     text-align: center;
-    cursor:auto;
+    cursor: auto;
 
 }
+
 .tree li a:hover,
 .set li a:hover {
     background-color: #ffa500;
@@ -245,6 +272,7 @@ header img {
     border: 3px solid #daa520;
 
 }
+
 ul {
     display: inline-block;
     margin-block-start: 0;
@@ -254,6 +282,7 @@ ul {
     padding-inline-start: 0;
 
 }
+
 .property-menu::-webkit-scrollbar-thumb,
 .tree-menu::-webkit-scrollbar-thumb {
     background-color: #9f9e9e;
@@ -262,11 +291,13 @@ ul {
     background-clip: padding-box;
 
 }
+
 .property-menu::-webkit-scrollbar,
 .tree-menu::-webkit-scrollbar {
     width: 16px;
 
 }
+
 .property-menu {
     --background: var(--white);
     height: 28.9%;
@@ -276,21 +307,25 @@ ul {
     margin-right: 2em;
 
 }
+
 .property-root {
     display: flex;
     padding: 0.5rem;
     flex-direction: row;
 
 }
+
 .property-root:nth-child(even) {
     background-color: lightgray;
 
 }
+
 .property-name {
     width: 40%;
     font-size: 22px;
 
 }
+
 .property-value {
     width: 60%;
     text-align: right;
@@ -298,6 +333,7 @@ ul {
     font-family: 'Lato', sans-serif;
 
 }
+
 #viewer-container {
     right: 5%;
     height: 68.8vh;
@@ -306,25 +342,30 @@ ul {
     margin-left: 3em;
 
 }
+
 #file-input {
     visibility: collapse;
 
 }
+
 ul,
 #myUL {
     list-style-type: none;
 
 }
+
 #myUL {
     margin: 0;
     padding: 0;
 
 }
+
 .caret {
     cursor: pointer;
     user-select: none;
 
 }
+
 .caret::before {
     content: "\25B6";
     color: var(--black);
@@ -334,15 +375,18 @@ ul,
     margin-top: 1rem;
 
 }
+
 .caret-down::before {
     transform: rotate(90deg);
 
 }
+
 .nested {
     display: none;
     margin-left: 1.5rem;
 
 }
+
 .active {
     display: block;
 }
@@ -352,4 +396,3 @@ body {
     margin: 0;
     font: normal 75% Arial, Helvetica, sans-serif;
 }
-

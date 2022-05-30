@@ -1,8 +1,3 @@
-/**
- * jQuery json-viewer
- * @author: Alexandre Bodelot <alexandre.bodelot@gmail.com>
- * @link: https://github.com/abodelot/jquery.json-viewer
- */
 (function ($) {
     /**
      * Check if arg is either an array with at least 1 element, or a dict with at least 1 key

@@ -155,7 +155,6 @@ var setStepEntityName = function (_) {
  * Anyways, we can substitute our string using the expression `$1$2)`.
  *
  * __UPDATE:__ This approach has been replaced with a new one.
- * See [Issue #4](https://github.com/andrewisen/bim-whale/issues/4) for more information.
  *
  * ### 2. Indefinite attribute
  * Example: `#764= IFCRELDEFINESBYPROPERTIES('0Jv9wzDiT2Fx3l2pN5PrZ7',#42,$,$,(#140),#752);`
@@ -166,7 +165,6 @@ var setStepEntityName = function (_) {
  * One can simply assume that _indefinite attributes_ __ALWAYS__ begins with a comma (and not a character).
  *
  * __UPDATE:__ This approach has been replaced with a new one.
- * See [Issue #4](https://github.com/andrewisen/bim-whale/issues/4) for more information.
  *
  * ### 3. Nested attribute
  * Example: `#810= IFCPROPERTYSET('0eCyo1mQf61RRDb8LkFhbB',#42,'Other',$,(#781,#782,#783,#784,#785));`

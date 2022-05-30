@@ -1,13 +1,4 @@
-:root {
-    /* Bootstrap Colors */
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --warning-color: #ffc107;
-    --danger-color: #dc3545;
-    --code-color: #e83e8c;
 
-    --content-scale: 0.8;
-}
 
 /* Force margin, dunno why margin-top doens't work */
 .json-document:before {
