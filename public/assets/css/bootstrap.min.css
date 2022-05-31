@@ -3082,22 +3082,22 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd
+    background-color: #8b8c8d93;
+    border-color: #8b8c8d93;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca
+    background-color: #8b8c8d93;
+    border-color: #8b8c8d93;
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-    box-shadow: 0 0 0 .25rem rgba(49, 132, 253, .5)
+    background-color: #8b8c8d93;
+    border-color: #8b8c8d93;;
+    box-shadow: 0 0 0 .25rem rgba(241, 222, 12, 0.984)
 }
 
 .btn-check:active+.btn-primary,
